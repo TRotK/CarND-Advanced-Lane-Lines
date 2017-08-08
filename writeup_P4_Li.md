@@ -129,8 +129,8 @@ Here's a [link to my video result](./test_videos_output/project_video.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-My implemetion of lane detection is a bit jittered for those road parts whose paving is bright and lanes are unclear. Temporal averaging helped a lot. Further exploration is using outlier rejection like RANSAC to keep the real lane pixels in the above situation (as I implemented in the first project).
+My implemetion of lane detection is a bit jittered for those road parts whose paving is bright and lanes are unclear. Temporal averaging helped a lot. Further exploration is using outlier rejection like RANSAC to keep the real lane mark pixels in the above situation (as I implemented in the first project).
 
-In the challenge_video.mp4, the main difficulties are that there is a disruption in the middle of lanes and is repaved with different color, and the left lane is too close to the road side which makes the detector confisued about which one is the lane. So, a possible solution is to weight more on color as the lane marks are always in yellow or white.
+In the challenge_video.mp4, the main difficulties are that there is a disruption in the middle of lane and is repaved with different color, and the left lane mark is too close to the road side which makes the detector confisued about which one is the lane line. So, a possible solution is to weight more on color as the lane marks are always in yellow or white.
 
-For the harder_challenge_video.mp4, I feel it would be really hard to detect the lanes by purely apply the computer vision techniques taught in class. Perhaps, using deep learning to segment lanes region would help. Please give me some inspiration if possible.
+For the harder_challenge_video.mp4, I feel it would be really hard to detect the lanes by purely apply the computer vision techniques taught in class. Perhaps, using deep learning to segment the lane's region would help. Please give me some inspiration if possible.
